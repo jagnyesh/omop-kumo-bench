@@ -1,0 +1,9 @@
+{
+  "cohort": 0.4,
+  "features": 1.8,
+  "lgbm": 3302.0,
+  "kumo": 0.8,
+  "kumo_train": 470.8,
+  "compare": 20.7,
+  "checks": 0.6
+}

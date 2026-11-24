@@ -1,0 +1,49 @@
+{
+  "task": "ed_visit_90d",
+  "model": "LightGBM (tuned, hand-built features)",
+  "n_features": 259,
+  "best_val_auroc": 0.8686095672414612,
+  "best_params": {
+    "learning_rate": 0.07825419237351883,
+    "num_leaves": 11,
+    "min_child_samples": 41,
+    "subsample": 0.7083309650191034,
+    "colsample_bytree": 0.735514122365871,
+    "reg_lambda": 0.007850683779046696,
+    "subsample_freq": 1
+  },
+  "best_iteration": 14,
+  "test_auroc": 0.8135919537599068,
+  "test_auroc_ci": [
+    0.7806939376208405,
+    0.8463180622496351
+  ],
+  "test_auprc": 0.6162277813319769,
+  "test_auprc_ci": [
+    0.5627116774496901,
+    0.6706549537882047
+  ],
+  "test_prevalence": 0.05492537313432836,
+  "test_n": 5025,
+  "test_patients": 5025,
+  "one_event_per_patient_auroc": 0.8135919537599068,
+  "one_event_per_patient_auprc": 0.6162277813319769,
+  "compute_seconds": 3301.7886621952057,
+  "top_features_gain": {
+    "proc_4163708": 7304.556799888611,
+    "proc_4064377": 1470.845344543457,
+    "proc_ndistinct": 1195.4766464233398,
+    "days_since_prev_er": 1139.3674268722534,
+    "proc_n": 955.0692167282104,
+    "proc_4150653": 362.87799072265625,
+    "meas_n": 333.18608474731445,
+    "cond_4229440": 246.9738302230835,
+    "meas_n_during_index": 210.34321689605713,
+    "cond_ndistinct": 193.3603000640869,
+    "er_365": 184.08769702911377,
+    "er_all": 160.83142948150635,
+    "op_365": 129.16950178146362,
+    "cond_4208104": 116.27516841888428,
+    "drug_n_during_index": 106.74670124053955
+  }
+}

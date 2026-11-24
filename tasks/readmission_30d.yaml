@@ -1,0 +1,11 @@
+# 30-day all-cause readmission: for each inpatient stay, is there another inpatient admission
+# starting within 30 days after discharge?
+name: readmission_30d
+index:
+  visit_concept_ids: [9201, 262]   # inpatient, ER-and-inpatient
+  anchor: end                      # predict at discharge
+  from: 2010-01-01
+outcome:
+  type: visit
+  concept_ids: [9201, 262]
+  window_days: 30

@@ -1,0 +1,15 @@
+# Emergency department visit within 90 days of an outpatient visit.
+# One randomly chosen outpatient visit per patient, so frequent visitors don't dominate;
+# capped at 25,000 patients so Kumo trains in reasonable time on CPU.
+name: ed_visit_90d
+index:
+  visit_concept_ids: [9202]        # outpatient
+  anchor: start                    # predict on the day of the visit
+  from: 2010-01-01
+  per_person: random
+population:
+  max_persons: 25000
+outcome:
+  type: visit
+  concept_ids: [9203]              # emergency room visit
+  window_days: 90

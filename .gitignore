@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+# Synthea data and DuckDB files are re-downloadable (python -m omop_bench.data); keep them out of git
+data/
+*.duckdb
+*.lzo
+*.csv

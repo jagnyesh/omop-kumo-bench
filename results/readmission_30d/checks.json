@@ -1,0 +1,27 @@
+{
+  "patients_in_more_than_one_split": 0,
+  "rows_dated_before_anchor_on_later_visits": {
+    "condition_occurrence": 2,
+    "drug_exposure": 2,
+    "procedure_occurrence": 13,
+    "measurement": 39
+  },
+  "rows_visible_total": 23527529,
+  "index_events": 55046,
+  "base_rate": 0.16967627075536823,
+  "first_event_per_patient_rate": 0.022178606476938173,
+  "share_of_positives_from_patients_with_10plus_events": 0.9761241970021414,
+  "patients_with_10plus_events": 1168,
+  "single_feature_test_auroc": {
+    "days_since_prev_ip": 0.93,
+    "days_since_prev_er": 0.61,
+    "ip_365": 0.908,
+    "er_365": 0.542,
+    "op_365": 0.518,
+    "ip_all": 0.788,
+    "age": 0.812,
+    "cond_n": 0.77,
+    "drug_n": 0.939,
+    "los": 0.537
+  }
+}

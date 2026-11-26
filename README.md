@@ -80,3 +80,6 @@ records dated on or before the anchor date.
 - `omop_bench/`: data, task (YAML to cohort), features, lgbm, kumo_export, kumo_run, compare, checks, run.
 - `tasks/`: task configs. `results/<task>/`: metrics, predictions, timing.
 - `code/` and the files directly in `results/`: the first readmission-only version (Nov 22), kept for reproducibility.
+
+## License
+This harness is licensed under Apache-2.0; see `LICENSE`. The repo doesn't include the Synthea data. The predictions in `results/` refer to synthetic Synthea `person_id` values only. `kumo-engine` is a separate Apache-2.0 package that you install yourself.
